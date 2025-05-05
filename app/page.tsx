@@ -75,24 +75,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Community Clips Section */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Community Clips</h2>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <div className="bg-card rounded-xl shadow-lg overflow-hidden w-72 h-44 md:w-80 md:h-56 border border-border transform rotate-[-8deg] -mt-4 md:mt-0">
-              <Image src="/cinna.jpg" alt="Cinna Clip" width={320} height={176} className="w-full h-full object-cover" />
-            </div>
-            <div className="bg-card rounded-xl shadow-lg overflow-hidden w-72 h-44 md:w-80 md:h-56 border border-border transform rotate-[6deg] md:-mt-8 z-10">
-              <Image src="/marlon.jpg" alt="Marlon Clip" width={320} height={176} className="w-full h-full object-cover" />
-            </div>
-            <div className="bg-card rounded-xl shadow-lg overflow-hidden w-72 h-44 md:w-80 md:h-56 border border-border transform rotate-[-4deg] md:mt-8">
-              <Image src="/duke.jpg" alt="Duke Clip" width={320} height={176} className="w-full h-full object-cover" />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
