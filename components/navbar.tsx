@@ -55,10 +55,10 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <ModeToggle />
             <Button asChild variant="outline">
-              <Link href="/login">Log In</Link>
+              <Link href="/select-role">Log In</Link>
             </Button>
             <Button asChild>
-              <Link href="/signup">Sign Up</Link>
+              <Link href="/select-role">Sign Up</Link>
             </Button>
           </div>
         </div>
@@ -83,10 +83,10 @@ export default function Navbar() {
               ))}
               <div className="flex flex-col gap-2 pt-2 border-t mt-2">
                 <Button asChild variant="outline">
-                  <Link href="/login">Log In</Link>
+                  <Link href="/select-role">Log In</Link>
                 </Button>
                 <Button asChild>
-                  <Link href="/signup">Sign Up</Link>
+                  <Link href="/select-role">Sign Up</Link>
                 </Button>
               </div>
             </nav>

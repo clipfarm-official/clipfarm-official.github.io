@@ -7,7 +7,7 @@ import { Search } from "lucide-react"
 export default function JobsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Available Clipping Campaigns</h1>
+      <h1 className="text-3xl font-bold mb-6 text-[#9147ff]">Available Clipping Campaigns</h1>
 
       <div className="mb-8">
         <div className="flex gap-4 mb-4">
@@ -19,22 +19,22 @@ export default function JobsPage() {
         </div>
 
         <div className="flex gap-2 flex-wrap">
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" className="border-[#9147ff] text-[#9147ff] hover:bg-[#9147ff] hover:text-white">
             All Campaigns
           </Button>
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" className="border-[#9147ff] text-[#9147ff] hover:bg-[#9147ff] hover:text-white">
             TikTok
           </Button>
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" className="border-[#9147ff] text-[#9147ff] hover:bg-[#9147ff] hover:text-white">
             YouTube Shorts
           </Button>
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" className="border-[#9147ff] text-[#9147ff] hover:bg-[#9147ff] hover:text-white">
             Instagram Reels
           </Button>
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" className="border-[#9147ff] text-[#9147ff] hover:bg-[#9147ff] hover:text-white">
             Highest Paying
           </Button>
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" className="border-[#9147ff] text-[#9147ff] hover:bg-[#9147ff] hover:text-white">
             Newest
           </Button>
         </div>

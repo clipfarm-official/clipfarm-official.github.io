@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen relative">
       {/* Hero Section */}
       <section className="py-24 flex items-center justify-center min-h-[60vh] bg-background">
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center">
@@ -20,13 +20,13 @@ export default function Home() {
               <span className="block text-black">
                 Transforming Content into
               </span>
-              <span className="block text-blue-500">Viral Clips</span>
+              <span className="block text-primary">Viral Clips</span>
             </h1>
             <div className="flex justify-center mt-8">
               <Button
                 asChild
                 size="lg"
-                className="relative px-10 py-4 rounded-full bg-blue-500/95 backdrop-blur-sm shadow-xl border border-blue-400/60 hover:bg-blue-600 transition-colors before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-300/10 before:to-blue-500/5 before:pointer-events-none text-white font-bold"
+                className="relative px-10 py-4 rounded-full bg-primary text-primary-foreground font-bold shadow-xl border border-primary/60 hover:bg-primary/90 transition-colors"
               >
                 <Link href="/jobs" className="relative z-10 text-white">
                   Start Clip Farming
