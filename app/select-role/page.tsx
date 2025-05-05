@@ -1,11 +1,10 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { LogoLarge } from "@/components/logo"
 import { Scissors, Users } from "lucide-react"
 
 export default function SelectRole() {
   return (
-    <div className="min-h-screen bg-primary flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center p-4" style={{ background: 'linear-gradient(135deg, #6e27b6 0%, #e9d8fd 100%)' }}>
       <div className="max-w-md w-full space-y-8 text-center">
         <div className="mb-12">
           <div className="flex items-center gap-4 justify-center">
@@ -15,11 +14,9 @@ export default function SelectRole() {
             </span>
           </div>
         </div>
-        
-        <h1 className="text-3xl font-bold text-white mb-8">
+        <h1 className="text-3xl font-bold text-white mb-8 drop-shadow-lg">
           Choose Your Role
         </h1>
-
         <div className="space-y-4">
           <Button
             asChild

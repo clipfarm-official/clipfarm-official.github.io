@@ -20,16 +20,15 @@ export default function Home() {
               <span className="block text-black">
                 Transforming Content into
               </span>
-              <span className="block text-primary">Viral Clips</span>
+              <span className="block text-primary">
+                <span className="glossy-text inline-block">Viral Clips</span>
+              </span>
             </h1>
             <div className="flex justify-center mt-8">
-              <Button
-                asChild
-                size="lg"
-                className="relative px-10 py-4 rounded-full bg-primary text-primary-foreground font-bold shadow-xl border border-primary/60 hover:bg-primary/90 transition-colors"
-              >
-                <Link href="/jobs" className="relative z-10 text-white">
+              <Button asChild size="lg" className="relative px-10 py-4 rounded-full bg-primary text-primary-foreground font-bold shadow-xl border border-primary/60 hover:bg-primary/90 transition-colors overflow-hidden">
+                <Link href="/jobs" className="relative z-10 text-white overflow-hidden">
                   Start Clip Farming
+                  <span className="glossy-overlay" aria-hidden="true" />
                 </Link>
               </Button>
             </div>
@@ -42,8 +41,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-card p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Scissors className="h-6 w-6 text-primary" />
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 relative overflow-hidden">
+                <Scissors className="h-6 w-6 text-primary glossy-text" />
               </div>
               <h3 className="text-xl font-bold mb-2">Professional Clipping</h3>
               <p className="text-muted-foreground">
@@ -51,8 +50,8 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-card p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-primary" />
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 relative overflow-hidden">
+                <Users className="h-6 w-6 text-primary glossy-text" />
               </div>
               <h3 className="text-xl font-bold mb-2">Global Talent Pool</h3>
               <p className="text-muted-foreground">
@@ -60,8 +59,8 @@ export default function Home() {
               </p>
             </div>
             <div className="bg-card p-8 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="h-6 w-6 text-primary" />
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 relative overflow-hidden">
+                <TrendingUp className="h-6 w-6 text-primary glossy-text" />
               </div>
               <h3 className="text-xl font-bold mb-2">Growth Focused</h3>
               <p className="text-muted-foreground">
@@ -80,9 +79,10 @@ export default function Home() {
             <p className="text-xl text-muted-foreground mb-8">
               Join thousands of creators who are already using ClipFarm to expand their reach.
             </p>
-            <Button asChild size="lg">
-              <Link href="/signup">
+            <Button asChild size="lg" className="relative overflow-hidden">
+              <Link href="/signup" className="overflow-hidden">
                 Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                <span className="glossy-overlay" aria-hidden="true" />
               </Link>
             </Button>
           </div>
