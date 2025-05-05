@@ -8,10 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden flex items-center justify-center min-h-[60vh]">
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-gradient-radial from-blue-500/40 via-blue-400/20 to-transparent" style={{position: 'absolute', inset: 0}} />
-        </div>
+      <section className="py-24 flex items-center justify-center min-h-[60vh] bg-background">
         <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center">
             <div className="mb-16">
@@ -20,8 +17,8 @@ export default function Home() {
               </span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-center mb-6 drop-shadow-lg leading-tight">
-              <span className="block">
-                Transform Your Content <span className="text-black">into</span>
+              <span className="block text-black">
+                Transforming Content into
               </span>
               <span className="block text-blue-500">Viral Clips</span>
             </h1>
@@ -29,9 +26,9 @@ export default function Home() {
               <Button
                 asChild
                 size="lg"
-                className="relative px-10 py-4 rounded-full bg-blue-500/95 backdrop-blur-sm shadow-xl border border-blue-400/60 hover:bg-blue-600 transition-colors before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-300/10 before:to-blue-500/5 before:pointer-events-none"
+                className="relative px-10 py-4 rounded-full bg-blue-500/95 backdrop-blur-sm shadow-xl border border-blue-400/60 hover:bg-blue-600 transition-colors before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blue-300/10 before:to-blue-500/5 before:pointer-events-none text-white font-bold"
               >
-                <Link href="/jobs" className="relative z-10">
+                <Link href="/jobs" className="relative z-10 text-white">
                   Start Clip Farming
                 </Link>
               </Button>
