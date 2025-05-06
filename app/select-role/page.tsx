@@ -34,7 +34,7 @@ export default function SelectRole() {
             size="lg"
             className="w-full bg-white text-primary hover:bg-white/90 h-16 text-lg"
           >
-            <Link href="/signup/clipper">
+            <Link href="/clipper/dashboard">
               <Scissors className="mr-2 h-6 w-6" />
               I'm a Clipper
             </Link>
