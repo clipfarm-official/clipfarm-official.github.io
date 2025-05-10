@@ -4,6 +4,8 @@ import { Logo, LogoLarge } from "@/components/logo"
 import { ArrowRight, Scissors, Users, TrendingUp, Sparkles, DollarSign, Music2, Twitch } from "lucide-react"
 import Image from "next/image"
 import CreatorWorkflowCarousel from '@/components/CreatorWorkflowCarousel'
+import { ClipperCarousel } from "@/components/ui/clipper-carousel"
+import { SplitFeatureCarousel } from "@/components/ui/SplitFeatureCarousel"
 
 export default function Home() {
   return (
@@ -207,7 +209,11 @@ export default function Home() {
           </svg>
           <div className="container mx-auto px-4 max-w-4xl relative z-10">
             <h2 className="text-3xl font-bold text-center text-white mb-12 drop-shadow-[0_2px_8px_#0008]">For Clippers</h2>
-            <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
+            {/* <ClipperCarousel /> */}
+            <div className="mt-12">
+              <SplitFeatureCarousel />
+            </div>
+            <div className="grid gap-12 grid-cols-1 md:grid-cols-2 mt-12">
               {[
                 {
                   icon: (
