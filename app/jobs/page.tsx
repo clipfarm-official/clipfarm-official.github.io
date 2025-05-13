@@ -7,7 +7,7 @@ import { Search } from "lucide-react"
 export default function JobsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6 text-[#9147ff]">Available Clipping Campaigns</h1>
+      <h1 className="text-3xl font-bold mb-6 text-[#9147ff]">Available Jobs</h1>
 
       <div className="mb-8">
         <div className="flex gap-4 mb-4">

@@ -25,7 +25,7 @@ export default function Navbar() {
     <header className="border-b">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <Link href="/">
+          <Link href="/" className="w-[200px]">
             <Logo />
           </Link>
 
@@ -38,12 +38,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center justify-center flex-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium transition-colors hover:text-primary px-4 ${
                   pathname === item.path ? "text-primary" : "text-muted-foreground"
                 }`}
               >
@@ -52,7 +52,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4 w-[200px] justify-end">
             <ModeToggle />
             {/* <Button asChild variant="outline">
               <Link href="/select-role">Log In</Link>

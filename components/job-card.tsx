@@ -11,7 +11,7 @@ interface JobCardProps {
 
 export default function JobCard({ job }: JobCardProps) {
   return (
-    <Card className="h-full flex flex-col">
+    <Card className="h-full flex flex-col blur-sm">
       <CardHeader className="pb-3">
         <div className="flex justify-between items-start">
           <div>

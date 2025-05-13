@@ -46,11 +46,11 @@ export default function Home() {
                 AI-powered, community-driven, and built for the next generation of creators and clippers.
               </div>
               <div className="flex justify-center mt-8">
-                {/* <Button asChild size="lg" className="relative px-12 py-5 rounded-full bg-gradient-to-r from-[#00eaff] via-[#9147ff] to-[#00eaff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#00eaff] transition-colors overflow-hidden animate-pulse-glow">
-                  <Link href="/register" className="relative z-10 text-white overflow-hidden">
+                <Button asChild size="lg" className="relative px-12 py-5 rounded-full bg-gradient-to-r from-[#00eaff] via-[#9147ff] to-[#00eaff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#00eaff] transition-colors overflow-hidden animate-pulse-glow">
+                  <Link href="/contact" className="relative z-10 text-white overflow-hidden">
                     Start Clip Farming
                   </Link>
-                </Button> */}
+                </Button>
               </div>
             </div>
           </div>
@@ -189,13 +189,14 @@ export default function Home() {
           <svg className="absolute top-0 left-0 w-full" height="32" viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 32 Q 720 0 1440 32" stroke="#9147ff33" strokeWidth="4" fill="none" />
           </svg>
-          <div className="container mx-auto px-4 max-w-4xl relative z-10">
+          {/* <ClipperCarousel /> */}
+          <div className="mt-12">
             <h2 className="text-3xl font-bold text-center text-white mb-12 drop-shadow-[0_2px_8px_#0008]">For Clippers</h2>
-            {/* <ClipperCarousel /> */}
-            <div className="mt-12">
-              {/* <SplitFeatureCarousel /> */}
-            </div>
-            <div className="grid gap-12 grid-cols-1 md:grid-cols-2 mt-12">
+
+            {/* <SplitFeatureCarousel /> */}
+          </div>
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="grid gap-8 grid-cols-1 md:grid-cols-2 mb-16">
               {[
                 {
                   icon: (
@@ -235,15 +236,15 @@ export default function Home() {
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="relative bg-white/10 backdrop-blur-md rounded-2xl px-6 py-6 flex flex-col gap-3 group hover:scale-[1.025] transition-transform min-h-[200px] min-w-[340px] border-2 border-transparent bg-clip-padding"
+                  className="relative bg-white/10 backdrop-blur-md rounded-2xl px-6 py-6 flex flex-col gap-3 group hover:scale-[1.025] transition-transform min-h-[200px] border-2 border-transparent bg-clip-padding"
                   style={{
                     boxShadow: '0 0 24px 4px #7f9cf5, 0 0 48px 8px #9147ff33',
                     borderImage: 'linear-gradient(90deg, #00eaff 0%, #9147ff 100%) 1',
                   }}
                 >
-                  <span className={`rounded-full p-2 md:p-3 ${item.bg} shadow-lg flex items-center justify-center w-fit mb-2`}>{item.icon}</span>
-                  <div className="font-bold text-base md:text-lg text-white mb-1 drop-shadow-[0_2px_8px_#0008]">{item.title}</div>
-                  <div className="text-[#c7c7e6] text-sm md:text-base leading-snug drop-shadow-[0_2px_8px_#0008]">{item.desc}</div>
+                  <span className={`rounded-full p-3 ${item.bg} shadow-lg flex items-center justify-center w-fit mb-2`}>{item.icon}</span>
+                  <h3 className="font-bold text-xl text-white mb-1 drop-shadow-[0_2px_8px_#0008]">{item.title}</h3>
+                  <p className="text-[#c7c7e6] text-base leading-relaxed drop-shadow-[0_2px_8px_#0008]">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -298,7 +299,7 @@ export default function Home() {
                 {/* Join thousands of creators who are already using <span className="text-[#b388ff] font-bold">ClipFarm</span> to expand their reach. */}
               </p>
               <Button asChild size="lg" className="relative overflow-hidden px-10 py-4 rounded-full bg-gradient-to-r from-[#a259ff] via-[#9147ff] to-[#e05cff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#e05cff] transition-colors animate-pulse-glow">
-                <Link href="/register" className="overflow-hidden">
+                <Link href="/contact" className="overflow-hidden">
                   Contact Us <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
