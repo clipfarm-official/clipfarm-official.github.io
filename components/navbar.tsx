@@ -17,8 +17,8 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Jobs", path: "/jobs" },
-    { name: "Leaderboards", path: "/leaderboards" },
-    { name: "How It Works", path: "/how-it-works" },
+    // { name: "Leaderboards", path: "/leaderboards" },
+    { name: "How It Works", path: "/#how-it-works" },
   ]
 
   return (
@@ -54,12 +54,12 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-4">
             <ModeToggle />
-            <Button asChild variant="outline">
+            {/* <Button asChild variant="outline">
               <Link href="/select-role">Log In</Link>
             </Button>
             <Button asChild>
               <Link href="/select-role">Sign Up</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
 

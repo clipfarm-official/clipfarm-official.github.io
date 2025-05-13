@@ -6,27 +6,33 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const carouselImages = [
-  {
-    src: "/BrowseCampaign2.png",
-    alt: "Browse Campaigns",
-    title: "Browse Campaigns",
-    description: "Find and join campaigns that match your content style"
-  },
-  {
-    src: "/trackClips.png",
-    alt: "Track Your Clips",
-    title: "Track Your Clips",
-    description: "Monitor your clip performance and engagement"
-  },
-  {
-    src: "/earnings2.png",
-    alt: "Track Earnings",
-    title: "Track Earnings",
-    description: "View and manage your earnings from successful clips"
-  }
+    {
+        src: '/createNewCampaign.png',
+        alt: 'Create New Campaign',
+        title: 'Create a New Campaign',
+        description: 'Create a new campaign to start earning',
+      },
+      {
+        src: '/creatorDashboard.png',
+        alt: 'Creator Dashboard',
+        title: 'Your Dashboard',
+        description: 'Track your campaign progress and performance',
+      },
+      {
+        src: '/analyticsCampaign.png',
+        alt: 'Campaign Analytics',
+        title: 'Campaign Analytics',
+        description: 'Track your campaign clipper performance',
+      },
+      {
+        src: '/generalAnalytics.png',
+        alt: 'General Analytics',
+        title: 'General Analytics',
+        description: 'AI driven insights for all your campaigns',
+      },
 ]
 
-export function SplitFeatureCarousel() {
+export function SplitFeatureCarousel2() {
   const [current, setCurrent] = React.useState(0)
 
   const prev = () => setCurrent((c) => (c === 0 ? carouselImages.length - 1 : c - 1))

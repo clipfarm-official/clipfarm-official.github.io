@@ -2,10 +2,11 @@
 
 import { useState } from "react"
 
-export default function CreatorSignupPage() {
+export default function RegisterPage() {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    role: "creator",
     youtube: "",
     twitch: "",
     instagram: "",
@@ -15,7 +16,7 @@ export default function CreatorSignupPage() {
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState("")
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
@@ -25,14 +26,14 @@ export default function CreatorSignupPage() {
     setError("")
     setSuccess(false)
     try {
-      const res = await fetch("/api/register-creator", {
+      const res = await fetch("/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       })
       if (res.ok) {
         setSuccess(true)
-        setForm({ name: "", email: "", youtube: "", twitch: "", instagram: "", tiktok: "" })
+        setForm({ name: "", email: "", role: "creator", youtube: "", twitch: "", instagram: "", tiktok: "" })
       } else {
         const data = await res.json()
         setError(data.error || "Registration failed")
@@ -47,7 +48,7 @@ export default function CreatorSignupPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#18122b] to-[#2d1a60] p-4">
       <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 w-full max-w-lg border border-[#9147ff]/30">
-        <h1 className="text-3xl font-bold mb-6 text-white text-center">Creator Registration</h1>
+        <h1 className="text-3xl font-bold mb-6 text-white text-center">Register</h1>
         <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
           <input
             className="rounded px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#9147ff]"
@@ -66,6 +67,16 @@ export default function CreatorSignupPage() {
             onChange={handleChange}
             required
           />
+          <select
+            className="rounded px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#9147ff]"
+            name="role"
+            value={form.role}
+            onChange={handleChange}
+            required
+          >
+            <option value="creator">Creator</option>
+            <option value="clipper">Clipper</option>
+          </select>
           <input
             className="rounded px-4 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#9147ff]"
             name="youtube"

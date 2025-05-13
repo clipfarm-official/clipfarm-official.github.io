@@ -6,7 +6,7 @@ import Image from "next/image"
 import CreatorWorkflowCarousel from '@/components/CreatorWorkflowCarousel'
 import { ClipperCarousel } from "@/components/ui/clipper-carousel"
 import { SplitFeatureCarousel } from "@/components/ui/SplitFeatureCarousel"
-
+import { SplitFeatureCarousel2 } from "@/components/ui/SplitFeatureCarousel2"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden">
@@ -46,11 +46,11 @@ export default function Home() {
                 AI-powered, community-driven, and built for the next generation of creators and clippers.
               </div>
               <div className="flex justify-center mt-8">
-                <Button asChild size="lg" className="relative px-12 py-5 rounded-full bg-gradient-to-r from-[#00eaff] via-[#9147ff] to-[#00eaff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#00eaff] transition-colors overflow-hidden animate-pulse-glow">
-                  <Link href="/jobs" className="relative z-10 text-white overflow-hidden">
+                {/* <Button asChild size="lg" className="relative px-12 py-5 rounded-full bg-gradient-to-r from-[#00eaff] via-[#9147ff] to-[#00eaff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#00eaff] transition-colors overflow-hidden animate-pulse-glow">
+                  <Link href="/register" className="relative z-10 text-white overflow-hidden">
                     Start Clip Farming
                   </Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -179,28 +179,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <CreatorWorkflowCarousel />
+        {/* <CreatorWorkflowCarousel /> */}
 
         {/* CTA Section */}
-        <section className="py-20 relative overflow-hidden bg-gradient-to-br from-[#1a1440]/90 to-[#2d1a60]/90 backdrop-blur-md border-t border-[#9147ff]/20 shadow-2xl">
-          {/* SVG divider at the top */}
-          <svg className="absolute top-0 left-0 w-full" height="32" viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 32 Q 720 0 1440 32" stroke="#9147ff33" strokeWidth="4" fill="none" />
-          </svg>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl mx-auto text-center rounded-2xl bg-white/5 border border-[#9147ff]/30 shadow-xl p-12 backdrop-blur-md">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white drop-shadow-[0_2px_8px_#0008]">Ready to Grow Your Content?</h2>
-              <p className="text-xl text-[#c7c7e6] mb-8 drop-shadow-[0_2px_8px_#0008]">
-                Join thousands of creators who are already using <span className="text-[#b388ff] font-bold">ClipFarm</span> to expand their reach.
-              </p>
-              <Button asChild size="lg" className="relative overflow-hidden px-10 py-4 rounded-full bg-gradient-to-r from-[#a259ff] via-[#9147ff] to-[#e05cff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#e05cff] transition-colors animate-pulse-glow">
-                <Link href="/signup" className="overflow-hidden">
-                  Get Started <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Clippers Section */}
         <section className="py-20 relative overflow-hidden bg-gradient-to-br from-[#18122b]/90 to-[#2d1a60]/80 backdrop-blur-md border-t border-[#9147ff]/20 shadow-2xl">
@@ -211,7 +193,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-center text-white mb-12 drop-shadow-[0_2px_8px_#0008]">For Clippers</h2>
             {/* <ClipperCarousel /> */}
             <div className="mt-12">
-              <SplitFeatureCarousel />
+              {/* <SplitFeatureCarousel /> */}
             </div>
             <div className="grid gap-12 grid-cols-1 md:grid-cols-2 mt-12">
               {[
@@ -273,15 +255,51 @@ export default function Home() {
           <svg className="absolute top-0 left-0 w-full" height="32" viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 32 Q 720 0 1440 32" stroke="#9147ff33" strokeWidth="4" fill="none" />
           </svg>
-          <div className="container mx-auto px-4">
+          {/* <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-4 text-white drop-shadow-[0_2px_8px_#0008]">Ready to Start Clipping?</h2>
               <p className="text-xl text-[#c7c7e6] mb-8 drop-shadow-[0_2px_8px_#0008]">
                 Join the ClipFarm community and start earning from your editing skills today.
               </p>
               <Button asChild size="lg" className="relative overflow-hidden px-10 py-4 rounded-full bg-gradient-to-r from-[#a259ff] via-[#9147ff] to-[#e05cff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#e05cff] transition-colors animate-pulse-glow">
-                <Link href="/clipper/dashboard" className="overflow-hidden">
+                <Link href="/register" className="overflow-hidden">
                   Start Clipping <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div> */}
+        </section>
+
+        {/* How it Works Section */}
+        <section id="how-it-works" className="py-24 bg-gradient-to-br from-[#18122b]/90 to-[#2d1a60]/80 border-t border-[#9147ff]/20 shadow-2xl">
+          <div className="container mx-auto px-4 max-w-5xl">
+            <h2 className="text-4xl font-bold text-center text-white mb-16 drop-shadow-[0_2px_8px_#0008]">How It Works</h2>
+            <div className="flex flex-col gap-24 justify-center items-center">
+              <div className="w-full">
+                <h3 className="text-2xl font-bold text-white mb-6 text-center">For Creators</h3>
+                <SplitFeatureCarousel2 />
+              </div>
+              <div className="w-full">
+                <h3 className="text-2xl font-bold text-white mb-6 text-center">For Clippers</h3>
+                <SplitFeatureCarousel />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-20 relative overflow-hidden bg-gradient-to-br from-[#1a1440]/90 to-[#2d1a60]/90 backdrop-blur-md border-t border-[#9147ff]/20 shadow-2xl">
+          {/* SVG divider at the top */}
+          <svg className="absolute top-0 left-0 w-full" height="32" viewBox="0 0 1440 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 32 Q 720 0 1440 32" stroke="#9147ff33" strokeWidth="4" fill="none" />
+          </svg>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto text-center rounded-2xl bg-white/5 border border-[#9147ff]/30 shadow-xl p-12 backdrop-blur-md">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white drop-shadow-[0_2px_8px_#0008]">Ready to Grow Your Content?</h2>
+              <p className="text-xl text-[#c7c7e6] mb-8 drop-shadow-[0_2px_8px_#0008]">
+                {/* Join thousands of creators who are already using <span className="text-[#b388ff] font-bold">ClipFarm</span> to expand their reach. */}
+              </p>
+              <Button asChild size="lg" className="relative overflow-hidden px-10 py-4 rounded-full bg-gradient-to-r from-[#a259ff] via-[#9147ff] to-[#e05cff] text-white font-bold shadow-2xl border-0 hover:from-[#9147ff] hover:to-[#e05cff] transition-colors animate-pulse-glow">
+                <Link href="/register" className="overflow-hidden">
+                  Contact Us <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
