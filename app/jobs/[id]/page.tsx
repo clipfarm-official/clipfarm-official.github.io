@@ -8,6 +8,13 @@ import { DollarSign, Calendar, Clock, Globe } from "lucide-react"
 import LeaderboardTable from "@/components/leaderboard-table"
 import JobRequirements from "@/components/job-requirements"
 
+// Add generateStaticParams function
+export async function generateStaticParams() {
+  return jobs.map((job) => ({
+    id: job.id,
+  }))
+}
+
 export default function JobPage({ params }: { params: { id: string } }) {
   const job = jobs.find((job) => job.id === params.id)
 
