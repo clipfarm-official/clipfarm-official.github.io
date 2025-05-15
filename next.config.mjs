@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  distDir: 'out',
+  basePath: process.env.NODE_ENV === 'production' ? '/clipfarm-official.github.io' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/clipfarm-official.github.io/' : '',
 }
 
 export default nextConfig
